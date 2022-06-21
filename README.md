@@ -63,7 +63,19 @@ I will not be holding myself to the 10 hour limit as I can't go straight, but I 
 
 8. GitHub Profiles App
 
--   Search for any user by username
+-   Search for any user by username (use GitHub API)
 -   Get and display data from users GitHub page
 
 9. Password Generator
+
+-   Add all types of characters (alphanumeric and symbols)
+-   One click copy to clipboard
+-   Choose length of password
+
+10. Weather App
+
+-   Enter a location
+-   Get the weather at that location (use metaweather API)
+-   Have icons to show weather
+-   ### FUTURE DEVELOPMENTS 
+    -   Allow fetching of location from browser

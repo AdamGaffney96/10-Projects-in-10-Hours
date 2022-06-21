@@ -7,9 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Timer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 
 <body>
+    <div class="content">
+        <h1>Countdown Timer</h1>
+        <div class="timer-content">
+            <select class="timer-selector">
+                <option value="newyearsday">New Years Day</option>
+                <option value="christmas">Christmas Day</option>
+                <option value="summer">First Day of Summer</option>
+            </select>
+            <div class="timer">
+                <div class="number days">000</div>
+                <div class="number hours">00</div>
+                <div class="number minutes">00</div>
+                <div class="number seconds">00</div>
+                <div class="caption days-caption">days</div>
+                <div class="caption hours-caption">hours</div>
+                <div class="caption minutes-caption">minutes</div>
+                <div class="caption seconds-caption">seconds</div>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 

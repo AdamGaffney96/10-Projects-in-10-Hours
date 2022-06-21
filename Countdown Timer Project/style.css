@@ -1,0 +1,73 @@
+:root {
+    --clr-background: hsl(0 100% 100% / 0.8);
+}
+
+body {
+    background-image: url("https://unsplash.it/1920/1080");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+
+.content {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+h1 {
+    background-color: var(--clr-background);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.timer-content {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    background-color: var(--clr-background);
+    padding: 2rem;
+    padding-top: 0;
+    font-size: 1.5rem;
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    height: fit-content;
+    width: 75%;
+    max-width: 700px;
+    min-width: 250px;
+    gap: 0 .5rem;
+    font-weight: 600;
+}
+
+.timer-selector {
+    font-size: 2rem;
+    margin: 1rem;
+    border: none;
+    background: none;
+}
+
+.number {
+    font-size: 2rem;
+}
+
+.caption {
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 480px) {
+    .number {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .number {
+        font-size: 4rem;
+    }
+}
