@@ -1,0 +1,33 @@
+body {
+    background-color: hsl(239, 53%, 17%);
+    display: grid;
+    justify-items: center;
+}
+
+.movie-list {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    width: 90%;
+}
+
+.movie-container {
+    display: grid;
+    place-items: start center;
+    background-color: hsl(234, 56%, 26%);
+    box-shadow: 0 0 1em .1em black;
+}
+
+.poster {
+    width: 100%;
+}
+
+.title {
+    color: white;
+    margin: 0;
+    padding: 1em;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
