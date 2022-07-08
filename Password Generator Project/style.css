@@ -1,0 +1,138 @@
+/* Root styles */
+
+:root {
+    --clr-bg: hsl(0 0% 13%);
+    --clr-box-bg: hsl(199 96% 18%);
+    --clr-box-bg-dark: hsl(199 96% 8%);
+    --clr-text: hsl(0 100% 100%);
+    --clr-text-opacity: hsla(0 100% 100% / 0.8);
+    --clr-password-text: hsl(0 50% 50%);
+}
+
+
+/* Basic styles */
+
+body {
+    background-color: var(--clr-bg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--clr-text);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+
+/* Typography */
+
+h1 {
+    display: inline-block;
+    background-color: var(--clr-text-opacity);
+    padding: 0.5em;
+    color: var(--clr-bg);
+}
+
+.password-text {
+    color: var(--clr-password-text);
+}
+
+.default-message {
+    font-weight: bold;
+}
+
+
+/* Modules */
+
+
+/* Copied Alert */
+
+.copied-alert {
+    position: absolute;
+    display: none;
+    right: 2em;
+    top: 26%;
+    padding: .5em;
+    background-color: var(--clr-box-bg-dark);
+    border-radius: 1em;
+    z-index: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* Password Options */
+
+.generator-card {
+    display: inline-grid;
+    position: relative;
+    background-color: var(--clr-box-bg);
+    border-radius: .5em;
+    padding: 2em;
+    gap: 1em;
+}
+
+.password-head {
+    background-color: var(--clr-text-opacity);
+    color: var(--clr-bg);
+    text-align: center;
+    border-radius: .5em;
+    font-size: 2em;
+    width: 700px;
+    cursor: pointer;
+}
+
+.password-options {
+    display: grid;
+    gap: 1em;
+}
+
+
+/* Password Length */
+
+.password-length {
+    display: flex;
+    gap: 1em;
+    text-align: center;
+}
+
+.password-length-num {
+    font-size: 1.6em;
+    line-height: 1em;
+    min-width: 32px;
+    align-self: center;
+}
+
+.password-length-selector {
+    display: flex;
+    align-items: center;
+    isolation: isolate;
+}
+
+.password-length-bar {
+    width: 100px;
+    min-width: 0;
+    max-width: 200px;
+    height: .2em;
+    border-radius: 1000px;
+    background-color: var(--clr-password-text);
+    cursor: pointer;
+}
+
+.password-length-bar::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: .2em;
+    border-radius: 1000px;
+    background-color: var(--clr-box-bg-dark);
+    z-index: -1;
+}
+
+.password-length-slider {
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--clr-password-text);
+    transform: translateX(-15px);
+    cursor: pointer;
+}

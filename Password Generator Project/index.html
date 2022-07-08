@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Peasy Password Generator</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1 class="title-text">Password Generator</h1>
+    </div>
+    <div class="generator-card">
+        <div class="password-head" title="Click here to copy password to clipboard.">
+            <p class="password-text"></p>
+        </div>
+        <p class="copied-alert">Password copied to clipboard!</p>
+        <div class="password-options">
+            <div class="password-length">
+                <p class="password-length-num"></p>
+                <div class="password-length-selector">
+                    <div class="password-length-bar"></div>
+                    <div class="password-length-slider"></div>
+                </div>
+            </div>
+            <div class="password-choices">
+                <p class="default-message">Lowercase letters are enabled by default.</p>
+                <div class="uppercase">
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                    <label for="uppercase" class="option-text">Uppercase [A-Z]</label>
+                </div>
+                <div class="numerics">
+                    <input type="checkbox" name="numerics" id="numerics">
+                    <label for="numerics" class="option-text">Digits [0-9]</label>
+                </div>
+                <div class="symbols">
+                    <input type="checkbox" name="symbols" id="symbols">
+                    <label for="symbols" class="option-text">Symbols [#, @, ! etc]</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" onclick="setPassword()">Generate Password</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
