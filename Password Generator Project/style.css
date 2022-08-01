@@ -108,7 +108,7 @@ h1 {
 }
 
 .password-length-bar {
-    width: 100px;
+    width: 0;
     min-width: 0;
     max-width: 200px;
     height: .2em;
